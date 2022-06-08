@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="wrapper">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking your time to help us improove.
+      </p>
+      <form id="survey-form">
+        <div class="block">
+          <label for="name" id="name-label">Enter your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <label for="email" id="email-label">Enter your email-ID</label>
+          <input
+            type="email"
+            id="email"
+            name="mail"
+            placeholder="E-mail address"
+            required
+          />
+          <label for="number" id="number-label"> Enter your age</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Age"
+            min="0"
+            max="10"
+          />
+        </div>
+        <h4>Select your stream</h4>
+        <select id="dropdown">
+          <option value="">Choose a Stream</option>
+          <option value="sci">Science</option>
+          <option value="comm">Commerce</option>
+          <option value="art">Arts</option>
+          <option value="mech">Mechanical/Civil</option>
+          <option value="elect">Electronics/Electrical</option>
+          <option value="csit">CS/IT</option>
+        </select>
+        <section class="inline">
+          <h4>Select your gender</h4>
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="none" id="none" />
+          <label for="none">Not to declare</label>
+        </section>
+        <h4>Choose a department</h4>
+        <div>
+          <input type="checkbox" name="front" id="front" value="front" />
+          <label for="front">Front-end developer</label>
+        </div>
+        <div>
+          <input type="checkbox" name="back" id="back" value="back" />
+          <label for="back">Back-end developer</label>
+        </div>
+        <div>
+          <input type="checkbox" name="full" id="full" value="full" />
+          <label for="full">Full Stack developer</label>
+        </div>
+        <div>
+          <input type="checkbox" name="datasci" id="datasci" value="datasci" />
+          <label for="datasci">Data Scientist</label>
+        </div>
+        <div>
+          <h4>Suggestion Box:</h4>
+          <textarea
+            id="feedback"
+            placeholder="If you have any suggestions, comments or recommendations....."
+            cols="35"
+            rows="8"
+            name="feedback"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
